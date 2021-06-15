@@ -1,0 +1,50 @@
+.section-icon__list {
+  width: 70px;
+  height: 70px;
+  fill: var(--icon-fill);
+}
+.section-icon {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-top: 94px;
+  margin-bottom: 30px;
+}
+.section-icon__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 270px;
+  height: 120px;
+  background-color: var(--background-our-team-filter);
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+.section-description__list {
+  display: flex;
+  margin-right: -30px;
+  margin-top: -30px;
+}
+.section-description__item {
+  margin-right: 30px;
+  margin-top: 30px;
+  flex-basis: calc((100% - 120px) / 4);
+}
+
+.section-description__title,
+.work__title,
+.team__title,
+.clients__title {
+  @include font();
+  color: var(--title-text-color);
+  margin-bottom: 10px;
+}
+.section-description__title {
+  text-transform: uppercase;
+}
+
+.desc,
+.address-list {
+  font-size: 14px;
+  line-height: 1.71;
+}
