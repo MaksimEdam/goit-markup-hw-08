@@ -733,18 +733,18 @@ body {
   padding: 10px 29px;
 }
 
-.filter-list {
+.filter__list {
   display: flex;
   margin-bottom: 50px;
   margin-top: 94px;
   justify-content: center;
 }
 
-.button-list:not(:last-child) {
+.filter__button-list:not(:last-child) {
   margin-right: 8px;
 }
 
-.filter-button {
+.filter__button {
   font-size: 16px;
   font-weight: 500;
   line-height: 1.63;
@@ -760,27 +760,27 @@ body {
   transition: background-color var(--transition-start-time) var(--cubic-bezier), color var(--transition-start-time) var(--cubic-bezier), box-shadow var(--transition-start-time) var(--cubic-bezier);
 }
 
-.filter-button:hover, .filter-button:focus {
+.filter__button:hover, .filter__button:focus {
   background-color: var(--accent-color);
   color: var(--title-text-color-footer);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
-.team-list-link-wrapper {
+.our-works__wrapper {
   color: var(--primary-text-color);
 }
 
-.team-list-img-wrapper {
+.our-works__img-wrapper {
   position: relative;
   overflow: hidden;
 }
 
-.team-list-img-wrapper:hover .overlay,
-.team-list-img-wrapper:focus .overlay {
+.our-works__img-wrapper:hover .our-works__overlay,
+.our-works__img-wrapper:focus .our-works__overlay {
   transform: translateY(0%);
 }
 
-.overlay {
+.our-works__overlay {
   position: absolute;
   top: 0;
   left: 0;
@@ -792,7 +792,7 @@ body {
   font-size: 18px;
   line-height: 1.55;
   letter-spacing: 0.03em;
-  padding: 63px 20px;
+  padding: 63px 16px;
   transform: translateY(100%);
   transition: transform var(--transition-start-time) var(--cubic-bezier);
 }
@@ -804,7 +804,7 @@ body {
   margin-top: -30px;
 }
 
-.our-works-list {
+.our-works__list {
   margin-left: 30px;
   margin-top: 30px;
   flex-basis: calc((100% - 90px) / 3);
@@ -812,17 +812,17 @@ body {
   transition: box-shadow var(--transition-start-time) var(--cubic-bezier);
 }
 
-.our-works-list:hover {
+.our-works__list:hover {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
-.border {
+.our-works__border {
   border-left: 1px solid #eeeeee;
   border-right: 1px solid #eeeeee;
   border-bottom: 1px solid #eeeeee;
 }
 
-.works-title {
+.our-works__title {
   color: var(--title-text-color);
   font-weight: 700;
   font-size: 18px;
@@ -833,7 +833,7 @@ body {
   padding-right: 24px;
 }
 
-.name-works {
+.our-works__name {
   font-size: 16px;
   line-height: 1.87;
   padding-left: 24px;
@@ -841,7 +841,7 @@ body {
   padding-bottom: 20px;
 }
 
-.indent {
+.our-works__container {
   padding-bottom: 94px;
 }
 /*# sourceMappingURL=main.css.map */

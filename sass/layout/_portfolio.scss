@@ -1,13 +1,13 @@
-.filter-list {
+.filter__list {
   display: flex;
   margin-bottom: 50px;
   margin-top: 94px;
   justify-content: center;
 }
-.button-list:not(:last-child) {
+.filter__button-list:not(:last-child) {
   margin-right: 8px;
 }
-.filter-button {
+.filter__button {
   @include font(16px, 500, 26px);
   background-color: var(--background-our-team-filter);
   color: var(--title-text-color);
@@ -30,18 +30,18 @@
   }
 }
 
-.team-list-link-wrapper {
+.our-works__wrapper {
   color: var(--primary-text-color);
 }
-.team-list-img-wrapper {
+.our-works__img-wrapper {
   position: relative;
   overflow: hidden;
-  &:hover .overlay,
-  &:focus .overlay {
+  &:hover .our-works__overlay,
+  &:focus .our-works__overlay {
     transform: translateY(0%);
   }
 }
-.overlay {
+.our-works__overlay {
   position: absolute;
   top: 0;
   left: 0;
@@ -53,7 +53,7 @@
   font-size: 18px;
   line-height: 1.55;
   letter-spacing: 0.03em;
-  padding: 63px 20px;
+  padding: 63px 16px;
   transform: translateY(100%);
   transition: transform var(--transition-start-time) var(--cubic-bezier);
 }
@@ -64,7 +64,7 @@
   margin-left: -30px;
   margin-top: -30px;
 }
-.our-works-list {
+.our-works__list {
   margin-left: 30px;
   margin-top: 30px;
   flex-basis: calc((100% - 90px) / 3);
@@ -76,12 +76,12 @@
   }
 }
 
-.border {
+.our-works__border {
   border-left: 1px solid #eeeeee;
   border-right: 1px solid #eeeeee;
   border-bottom: 1px solid #eeeeee;
 }
-.works-title {
+.our-works__title {
   color: var(--title-text-color);
   font-weight: 700;
   font-size: 18px;
@@ -91,13 +91,13 @@
   padding-left: 24px;
   padding-right: 24px;
 }
-.name-works {
+.our-works__name {
   font-size: 16px;
   line-height: 1.87;
   padding-left: 24px;
   padding-right: 24px;
   padding-bottom: 20px;
 }
-.indent {
+.our-works__container {
   padding-bottom: 94px;
 }
