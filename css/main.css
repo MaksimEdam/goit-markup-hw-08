@@ -1,3 +1,4 @@
+@charset "UTF-8";
 :root {
   --primary-text-color: #757575;
   --title-text-color: #212121;
@@ -448,6 +449,50 @@ body {
   fill: currentColor;
   margin-right: 10px;
 } */
+.hero {
+  background-color: var(--background-hero);
+  text-align: center;
+  padding-top: 200px;
+  padding-bottom: 200px;
+  max-width: 1600px;
+  margin: 0 auto;
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/mobail/hero/Header.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+@media (min-device-pixel-ratio: 2) and (max-width: 767px), (min-resolution: 192dpi) and (max-width: 767px), (min-resolution: 2dppx) and (max-width: 767px) {
+  .hero {
+    background-image: url("../images/mobail/hero/Header@2x.jpg");
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .hero {
+    background-image: url("../images/tablet/hero/Headert.jpg");
+  }
+}
+
+@media (min-device-pixel-ratio: 2) and (min-width: 768px), (min-resolution: 192dpi) and (min-width: 768px), (min-resolution: 2dppx) and (min-width: 768px) {
+  .hero {
+    background-image: url("../images/tablet/hero/Headert@2x.jpg");
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .hero {
+    background-image: url("../images/desctop/hero/Headerd.jpg");
+  }
+}
+
+/* 2x и 1200+ */
+@media (min-device-pixel-ratio: 2) and (min-width: 1600px), (min-resolution: 192dpi) and (min-width: 1600px), (min-resolution: 2dppx) and (min-width: 1600px) {
+  .hero {
+    background-image: url("../images/desctop/hero/Headerd@2x.jpg");
+  }
+}
+
 /* .hero {
   background-color: var(--background-hero);
   text-align: center;
@@ -458,14 +503,17 @@ body {
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
     url(../images/hero/background.jpg);
   background-size: cover;
-}
+} */
 .hero__title {
-  @include font(44px, 900, 60px);
+  font-size: 44px;
+  font-weight: 900;
+  line-height: 1.36;
   color: var(--title-text-color-footer);
   letter-spacing: 0.06em;
   text-transform: uppercase;
   margin-bottom: 40px;
-} */
+}
+
 /* .section-icon__list {
   width: 70px;
   height: 70px;
