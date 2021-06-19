@@ -1,6 +1,7 @@
 .menu {
   display: none;
 }
+
 .contact {
   display: none;
 }
@@ -9,6 +10,7 @@
   padding-top: 16px;
   padding-bottom: 16px;
 }
+
 /* .header__container {
   display: flex;
   align-items: center;
@@ -41,8 +43,8 @@
 }
 /* .menu__item:not(:last-child) {
   margin-right: 50px;
-}
-.menu__link {
+} */
+/* .menu__link {
   @include font(14px, 500, 16px);
   position: relative;
   display: block;
@@ -70,9 +72,9 @@
   &.current {
     color: var(--accent-color);
   }
-} */
+}
 
-/* .contact__mail {
+.contact__mail {
   margin-right: 50px;
 }
 .contact__mail-link {
@@ -84,8 +86,8 @@
   &:focus {
     color: var(--accent-color);
   }
-}
-.contact__phone-link {
+} */
+/* .contact__phone-link {
   display: flex;
   align-items: center;
   color: var(--primary-text-color);
