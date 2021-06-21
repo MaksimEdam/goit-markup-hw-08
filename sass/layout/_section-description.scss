@@ -23,6 +23,9 @@
   @include font();
   color: var(--title-text-color);
   margin-bottom: 10px;
+  text-align: center;
+  padding-top: 60px;
+  padding-bottom: 30px;
 }
 .desc,
 .address-list {
