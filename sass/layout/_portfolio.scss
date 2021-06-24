@@ -1,7 +1,5 @@
 .filter__list {
   display: flex;
-  margin-bottom: 50px;
-  margin-top: 94px;
   justify-content: center;
 }
 .filter__button-list:not(:last-child) {
@@ -82,6 +80,10 @@
   padding-bottom: 94px;
 }
 @media screen and (max-width: 767px) {
+  .filter__list {
+    margin-bottom: 40px;
+    margin-top: 60px;
+  }
   .our-works__border {
     margin-bottom: 30px;
   }
@@ -99,6 +101,10 @@
   }
 }
 @media screen and (min-width: 768px) {
+  .filter__list {
+    margin-bottom: 14px;
+    margin-top: 60px;
+  }
   .our-works {
     display: flex;
     flex-wrap: wrap;
@@ -121,6 +127,10 @@
   }
 }
 @media screen and (min-width: 1200px) {
+  .filter__list {
+    margin-bottom: 50px;
+    margin-top: 94px;
+  }
   .our-works__list {
     flex-basis: calc((100% - 90px) / 3);
   }
