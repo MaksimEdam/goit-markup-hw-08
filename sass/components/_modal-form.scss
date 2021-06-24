@@ -72,8 +72,8 @@
 }
 
 .modal-form__checkbox-policy {
-  font-size: 14px;
-  line-height: 1.71px;
+  font-size: 12px;
+  line-height: 1.16;
   color: var(--primary-text-color);
   margin-top: 20px;
   display: inline-block;
@@ -86,7 +86,7 @@
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
     border: 2px solid var(--title-text-color);
     border-radius: 2px;
-    margin-right: 7px;
+    margin-right: 0px;
     cursor: pointer;
     background-repeat: no-repeat;
     background-position: center;
@@ -117,4 +117,22 @@
 
 .modal-form__policy-link {
   color: var(--button-hover-focus);
+}
+
+@media screen and (max-width: 767px) {
+}
+
+@media screen and (min-width: 768px) {
+}
+
+@media screen and (min-width: 1200px) {
+  .modal-form__checkbox-policy {
+    font-size: 14px;
+    line-height: 1.71;
+  }
+  .modal-form__checkbox-policy {
+    &::before {
+      margin-right: 7px;
+    }
+  }
 }
