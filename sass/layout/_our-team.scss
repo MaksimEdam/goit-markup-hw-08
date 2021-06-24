@@ -29,6 +29,9 @@
   .team__our {
     padding-bottom: 60px;
   }
+  .team__our-list:not(:last-child) {
+    margin-bottom: 30px;
+  }
   .team__img {
     width: 100%;
   }
