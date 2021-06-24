@@ -670,8 +670,6 @@ body {
   color: var(--title-text-color);
   margin-bottom: 10px;
   text-align: center;
-  padding-top: 60px;
-  padding-bottom: 30px;
 }
 
 .desc,
@@ -682,9 +680,21 @@ body {
 
 /* МОБИЛКА */
 @media screen and (max-width: 767px) {
+  .work__title,
+  .clients__title {
+    font-family: Roboto;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 1.17;
+    margin-bottom: 30px;
+    padding-top: 60px;
+  }
+  .work__title_margin {
+    padding-top: 60px;
+  }
   .section-icon {
     padding-top: 60px;
-    margin-bottom: 30px;
+    margin-bottom: 60px;
   }
   .section-icon__link {
     max-width: 450px;
@@ -700,6 +710,14 @@ body {
 /* МОБИЛКА конец*/
 /* ТАБЛЕТ */
 @media screen and (min-width: 768px) {
+  .work__title,
+  .clients__title {
+    font-family: Roboto;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 1.17;
+    padding-top: 60px;
+  }
   .section-icon {
     display: flex;
     flex-wrap: wrap;
@@ -828,6 +846,9 @@ body {
 }
 
 @media screen and (max-width: 767px) {
+  .team__our {
+    padding-bottom: 60px;
+  }
   .team__img {
     width: 100%;
   }
@@ -839,6 +860,7 @@ body {
     flex-wrap: wrap;
     margin-left: -30px;
     margin-top: -30px;
+    padding-bottom: 60px;
   }
   .team__our-list {
     margin-left: 30px;
@@ -852,6 +874,7 @@ body {
     display: flex;
     margin-left: -30px;
     margin-top: -30px;
+    padding-bottom: 94px;
   }
   .team__our-list {
     margin-left: 30px;
@@ -1087,6 +1110,7 @@ body {
     align-items: baseline;
   }
   .footer__address-container {
+    margin-bottom: 0px;
     margin-right: 70px;
     text-align: left;
   }
