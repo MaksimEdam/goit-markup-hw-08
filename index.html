@@ -322,20 +322,23 @@
 
                 <source
                   srcset="
-                    ./images/tablet/our-team/olgat.webp 1x,
+                    ./images/tablet/our-team/olgat.webp    1x,
                     ./images/tablet/our-team/olgat@2x.webp 2x
                   "
                   media="(min-width: 768px)"
                   type="image/webp"
                 />
                 <source
-                  srcset="./images/tablet/our-team/olgat.jpg, ./images/tablet/our-team/olgat.jpg"
+                  srcset="
+                    ./images/tablet/our-team/olgat.jpg   1x,
+                    ./images/tablet/our-team/olgat@2.jpg 2x
+                  "
                   media="(min-width: 768px)"
                 />
 
                 <source
                   srcset="
-                    ./images/mobail/mobail-our-team/olga.webp 1x,
+                    ./images/mobail/mobail-our-team/olga.webp    1x,
                     ./images/mobail/mobail-our-team/olga@2x.webp 2x
                   "
                   media="(max-width: 767px)"
@@ -343,7 +346,7 @@
                 />
                 <source
                   srcset="
-                    ./images/mobail/mobail-our-team/olga.jpg 1x,
+                    ./images/mobail/mobail-our-team/olga.jpg    1x,
                     ./images/mobail/mobail-our-team/olga@2x.jpg 2x
                   "
                   media="(max-width: 767px)"
@@ -388,7 +391,7 @@
               <picture class="picture">
                 <source
                   srcset="
-                    ./images/desctop/our-team/nikolayd.webp 1x,
+                    ./images/desctop/our-team/nikolayd.webp    1x,
                     ./images/desctop/our-team/nikolayd@2x.webp 2x
                   "
                   media="(min-width: 1200px)"
@@ -396,7 +399,7 @@
                 />
                 <source
                   srcset="
-                    ./images/desctop/our-team/nikolayd.jpg 1x,
+                    ./images/desctop/our-team/nikolayd.jpg    1x,
                     ./images/desctop/our-team/nikolayd@2x.jpg 2x
                   "
                   media="(min-width: 1200px)"
@@ -404,7 +407,7 @@
 
                 <source
                   srcset="
-                    ./images/tablet/our-team/nikolayt.webp 1x,
+                    ./images/tablet/our-team/nikolayt.webp    1x,
                     ./images/tablet/our-team/nikolayt@2x.webp 2x
                   "
                   media="(min-width: 768px)"
@@ -412,7 +415,7 @@
                 />
                 <source
                   srcset="
-                    ./images/tablet/our-team/nikolayt.jpg 1x,
+                    ./images/tablet/our-team/nikolayt.jpg   1x,
                     ./images/tablet/our-team/nikolay@2x.jpg 2x
                   "
                   media="(min-width: 768px)"
@@ -420,7 +423,7 @@
 
                 <source
                   srcset="
-                    ./images/mobail/mobail-our-team/nikolay.webp 1x,
+                    ./images/mobail/mobail-our-team/nikolay.webp    1x,
                     ./images/mobail/mobail-our-team/nikolay@2x.webp 2x
                   "
                   media="(max-width: 767px)"
@@ -428,7 +431,7 @@
                 />
                 <source
                   srcset="
-                    ./images/mobail/mobail-our-team/nikolay.jpg 1x,
+                    ./images/mobail/mobail-our-team/nikolay.jpg    1x,
                     ./images/mobail/mobail-our-team/nikolay@2x.jpg 2x
                   "
                   media="(max-width: 767px)"
@@ -477,7 +480,7 @@
               <picture class="picture">
                 <source
                   srcset="
-                    ./images/desctop/our-team/mihaild.webp 1x,
+                    ./images/desctop/our-team/mihaild.webp    1x,
                     ./images/desctop/our-team/mihaild@2x.webp 2x
                   "
                   media="(min-width: 1200px)"
@@ -485,7 +488,7 @@
                 />
                 <source
                   srcset="
-                    ./images/desctop/our-team/mihaild.jpg 1x,
+                    ./images/desctop/our-team/mihaild.jpg    1x,
                     ./images/desctop/our-team/mihaild@2x.jpg 2x
                   "
                   media="(min-width: 1200px)"
@@ -493,7 +496,7 @@
 
                 <source
                   srcset="
-                    ./images/tablet/our-team/mihailt.webp 1x,
+                    ./images/tablet/our-team/mihailt.webp    1x,
                     ./images/tablet/our-team/mihailt@2x.webp 2x
                   "
                   media="(min-width: 768px)"
@@ -501,7 +504,7 @@
                 />
                 <source
                   srcset="
-                    ./images/tablet/our-team/mihailt.jpg 1x,
+                    ./images/tablet/our-team/mihailt.jpg    1x,
                     ./images/tablet/our-team/mihailt@2x.jpg 2x
                   "
                   media="(min-width: 768px)"
@@ -509,7 +512,7 @@
 
                 <source
                   srcset="
-                    ./images/mobail/mobail-our-team/mihail.webp 1x,
+                    ./images/mobail/mobail-our-team/mihail.webp    1x,
                     ./images/mobail/mobail-our-team/mihail@2x.webp 2x
                   "
                   media="(max-width: 767px)"
@@ -517,7 +520,7 @@
                 />
                 <source
                   srcset="
-                    ./images/mobail/mobail-our-team/mihail.jpg 1x,
+                    ./images/mobail/mobail-our-team/mihail.jpg    1x,
                     ./images/mobail/mobail-our-team/mihail@2x.jpg 2x
                   "
                   media="(max-width: 767px)"
@@ -700,17 +703,17 @@
         <form class="modal-form">
           <p class="modal-form__head">Оставьте свои данные, мы вам перезвоним</p>
           <label class="modal-form__field">
-            <p>Имя</p>
-            <div class="modal-form__input-wrapper">
+            <span>Имя</span>
+            <span class="modal-form__input-wrapper">
               <input type="text" name="user-name" class="modal-form__input" minlength="2" />
               <svg class="modal-form__icon">
                 <use href="./images/svg/sprite.svg#icon-person-black"></use>
               </svg>
-            </div>
+            </span>
           </label>
           <label class="modal-form__field">
-            <p>Телефон</p>
-            <div class="modal-form__input-wrapper">
+            <span>Телефон</span>
+            <span class="modal-form__input-wrapper">
               <input
                 type="tel"
                 name="user-phone"
@@ -722,19 +725,19 @@
               <svg class="modal-form__icon">
                 <use href="./images/svg/sprite.svg#icon-phone-black"></use>
               </svg>
-            </div>
+            </span>
           </label>
           <label class="modal-form__field">
-            <p>Почта</p>
-            <div class="modal-form__input-wrapper">
+            <span>Почта</span>
+            <span class="modal-form__input-wrapper">
               <input type="email" name="user-mail" class="modal-form__input" required />
               <svg class="modal-form__icon">
                 <use href="./images/svg/sprite.svg#icon-email-black"></use>
               </svg>
-            </div>
+            </span>
           </label>
           <label class="modal-form__textarea">
-            <p>Комментарий</p>
+            <span>Комментарий</span>
             <textarea name="user-message" class="modal-form__message" placeholder="Введите текст">
             </textarea>
           </label>
