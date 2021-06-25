@@ -131,8 +131,6 @@ body {
     margin-bottom: 32px;
   }
   .mobail-menu__link {
-    font-family: Roboto;
-    font-style: normal;
     letter-spacing: 0.02em;
     font-size: 40px;
     font-weight: 500;
@@ -142,15 +140,15 @@ body {
   .mobail-menu__link:hover, .mobail-menu__link:focus, .mobail-menu__link.current {
     color: var(--accent-color);
   }
-  .header__mobail-menu {
-    width: 24px;
-    height: 16px;
-  }
   .mobail-menu__close-btn {
     transition: fill var(--transition-start-time) var(--cubic-bezier);
   }
   .mobail-menu__close-btn:hover, .mobail-menu__close-btn:focus {
     fill: var(--button-hover-focus);
+  }
+  .header__mobail-menu {
+    width: 24px;
+    height: 16px;
   }
   .header__mobail-menu-btn {
     padding: 0;
@@ -164,11 +162,6 @@ body {
     fill: var(--button-hover-focus);
   }
   .mobail-menu__contact-mail-link {
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 24px;
-    line-height: 28px;
     letter-spacing: 0.02em;
     font-size: 24px;
     font-weight: 500;
@@ -179,8 +172,6 @@ body {
     color: var(--accent-color);
   }
   .mobail-menu__contact-phone-link {
-    font-family: Roboto;
-    font-style: normal;
     letter-spacing: 0.02em;
     font-size: 34px;
     font-weight: 500;
@@ -202,45 +193,22 @@ body {
   .mobail-menu__contact-mail {
     margin-bottom: 64px;
   }
-  .mobail-menu__social-item {
+  .mobail-menu__social-item:not(:first-child) {
     padding-left: 10px;
+  }
+  .mobail-menu__social-item:not(:last-child) {
     padding-right: 10px;
     border-right: 1px solid rgba(33, 33, 33, 0.2);
   }
   .mobail-menu__social-link {
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: 500;
     font-size: 18px;
-    line-height: 22px;
+    font-weight: 500;
+    line-height: 1.22;
     letter-spacing: 0.02em;
-    color: #2196f3;
+    color: var(--accent-color);
   }
 }
 
-/* .modal-button {
-  align-self: center;
-  border-radius: 4px;
-  border: 0;
-  background-color: var(--accent-color);
-  font-family: inherit;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.87;
-  letter-spacing: 0.06em;
-  cursor: pointer;
-  transition: background-color var(--transition-start-time) var(--cubic-bezier),
-    color var(--transition-start-time) var(--cubic-bezier);
-  &:hover,
-  &:focus {
-    background-color: var(--button-hover-focus);
-    color: var(--title-text-color-footer);
-  }
-}
-.modal-button_style {
-  color: var(--title-text-color);
-  padding: 10px 32px;
-} */
 .modal-button {
   align-self: center;
   border-radius: 4px;
