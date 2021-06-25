@@ -90,6 +90,156 @@ body {
   }
 }
 
+@media screen and (max-width: 1199px) {
+  .mobail-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vw;
+    background-color: #ffffff;
+    overflow: auto;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+  }
+  .mobail-menu__container {
+    position: relative;
+    padding-top: 48px;
+    padding-bottom: 48px;
+    padding-left: 25px;
+  }
+  .mobail-menu__close {
+    width: 40px;
+    height: 40px;
+  }
+  .mobail-menu__close-btn {
+    position: absolute;
+    top: 21px;
+    right: 25px;
+    border: none;
+    background-color: transparent;
+    padding: 0;
+  }
+  .mobail-menu.is-open {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+  }
+  .mobail-menu__item:not(:last-child) {
+    margin-bottom: 32px;
+  }
+  .mobail-menu__link {
+    font-family: Roboto;
+    font-style: normal;
+    letter-spacing: 0.02em;
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 1.18;
+    color: var(--title-text-color);
+  }
+  .mobail-menu__link:hover, .mobail-menu__link:focus, .mobail-menu__link.current {
+    color: var(--accent-color);
+  }
+  .header__mobail-menu {
+    width: 24px;
+    height: 16px;
+  }
+  .mobail-menu__close-btn {
+    transition: fill var(--transition-start-time) var(--cubic-bezier);
+  }
+  .mobail-menu__close-btn:hover, .mobail-menu__close-btn:focus {
+    fill: var(--button-hover-focus);
+  }
+  .header__mobail-menu-btn {
+    padding: 0;
+    padding-right: 8px;
+    border: 0;
+    background-color: white;
+    cursor: pointer;
+    transition: fill var(--transition-start-time) var(--cubic-bezier);
+  }
+  .header__mobail-menu-btn:hover, .header__mobail-menu-btn:focus {
+    fill: var(--button-hover-focus);
+  }
+  .mobail-menu__contact-mail-link {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: 0.02em;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 1.17;
+    color: var(--primary-text-color);
+  }
+  .mobail-menu__contact-mail-link:hover, .mobail-menu__contact-mail-link:focus {
+    color: var(--accent-color);
+  }
+  .mobail-menu__contact-phone-link {
+    font-family: Roboto;
+    font-style: normal;
+    letter-spacing: 0.02em;
+    font-size: 34px;
+    font-weight: 500;
+    line-height: 1.18;
+    color: var(--title-text-color);
+  }
+  .mobail-menu__contact-phone-link:hover, .mobail-menu__contact-phone-link:focus {
+    color: var(--accent-color);
+  }
+  .mobail-menu__nav {
+    margin-bottom: 302px;
+  }
+  .mobail-menu__social {
+    display: flex;
+  }
+  .mobail-menu__contact-phone {
+    margin-bottom: 32px;
+  }
+  .mobail-menu__contact-mail {
+    margin-bottom: 64px;
+  }
+  .mobail-menu__social-item {
+    padding-left: 10px;
+    padding-right: 10px;
+    border-right: 1px solid rgba(33, 33, 33, 0.2);
+  }
+  .mobail-menu__social-link {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: 0.02em;
+    color: #2196f3;
+  }
+}
+
+/* .modal-button {
+  align-self: center;
+  border-radius: 4px;
+  border: 0;
+  background-color: var(--accent-color);
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+  transition: background-color var(--transition-start-time) var(--cubic-bezier),
+    color var(--transition-start-time) var(--cubic-bezier);
+  &:hover,
+  &:focus {
+    background-color: var(--button-hover-focus);
+    color: var(--title-text-color-footer);
+  }
+}
+.modal-button_style {
+  color: var(--title-text-color);
+  padding: 10px 32px;
+} */
 .modal-button {
   align-self: center;
   border-radius: 4px;
@@ -446,6 +596,9 @@ body {
 /* МОБИЛКА конец */
 /* ТАБЛЕТ начало */
 @media screen and (min-width: 768px) {
+  .header__mobail-menu-btn {
+    display: none;
+  }
   .menu {
     display: flex;
     align-items: center;
@@ -499,6 +652,9 @@ body {
 /* ТАБЛЕТ конец */
 /* ДЕСКТОП начало */
 @media screen and (min-width: 1200px) {
+  .mobail-menu {
+    display: none;
+  }
   .contact {
     display: flex;
     align-items: center;

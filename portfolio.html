@@ -37,6 +37,11 @@
             </li>
           </ul>
         </nav>
+        <button class="header__mobail-menu-btn" data-menu-button>
+          <svg class="header__mobail-menu">
+            <use href="./images/svg/sprite.svg#mobail-icon-menu"></use>
+          </svg>
+        </button>
         <ul class="contact list">
           <li class="contact__mail">
             <a class="contact__mail-link link" href="mailto:info@devstudio.com"
@@ -55,6 +60,52 @@
             >
           </li>
         </ul>
+      </div>
+      <div class="mobail-menu" data-menu>
+        <div class="container mobail-menu__container">
+          <button type="button" class="mobail-menu__close-btn" data-menu-close>
+            <svg class="mobail-menu__close">
+              <use href="./images/svg/sprite.svg#icon-close-black"></use>
+            </svg>
+          </button>
+          <ul class="mobail-menu__nav list">
+            <li class="mobail-menu__item">
+              <a class="mobail-menu__link link" href="./index.html">Студия</a>
+            </li>
+            <li class="mobail-menu__item">
+              <a class="mobail-menu__link link current" href="./portfolio.html">Портфолио</a>
+            </li>
+            <li class="mobail-menu__item">
+              <a href="" class="mobail-menu__link link">Контакты</a>
+            </li>
+          </ul>
+          <ul class="mobail-menu__contact">
+            <li class="mobail-menu__contact-phone list">
+              <a class="mobail-menu__contact-phone-link link" href="tel:+380961111111"
+                >+38 096 111 11 11</a
+              >
+            </li>
+            <li class="mobail-menu__contact-mail list">
+              <a class="mobail-menu__contact-mail-link link" href="mailto:info@devstudio.com"
+                >info@devstidio.com</a
+              >
+            </li>
+          </ul>
+          <ul class="mobail-menu__social list">
+            <li class="mobail-menu__social-item">
+              <a class="mobail-menu__social-link link" href="">Instagram</a>
+            </li>
+            <li class="mobail-menu__social-item">
+              <a class="mobail-menu__social-link link" href="">Twitter</a>
+            </li>
+            <li class="mobail-menu__social-item">
+              <a class="mobail-menu__social-link link" href="">Facebook</a>
+            </li>
+            <li class="mobail-menu__social-item">
+              <a class="mobail-menu__social-link link" href="">LinkedIn</a>
+            </li>
+          </ul>
+        </div>
       </div>
     </header>
     <main>
@@ -777,5 +828,6 @@
         </div>
       </footer>
     </main>
+    <script src="./js/menu.js"></script>
   </body>
 </html>

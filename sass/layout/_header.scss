@@ -72,6 +72,9 @@
 
 /* ТАБЛЕТ начало */
 @media screen and (min-width: 768px) {
+  .header__mobail-menu-btn {
+    display: none;
+  }
   .menu {
     display: flex;
     align-items: center;
@@ -125,6 +128,9 @@
 
 /* ДЕСКТОП начало */
 @media screen and (min-width: 1200px) {
+  .mobail-menu {
+    display: none;
+  }
   .contact {
     display: flex;
     align-items: center;
