@@ -31,6 +31,11 @@
       border: none;
       background-color: transparent;
       padding: 0;
+      transition: fill var(--transition-start-time) var(--cubic-bezier);
+      &:hover,
+      &:focus {
+        fill: var(--button-hover-focus);
+      }
     }
 
     &.is-open {
@@ -51,13 +56,7 @@
         color: var(--accent-color);
       }
     }
-    &__close-btn {
-      transition: fill var(--transition-start-time) var(--cubic-bezier);
-      &:hover,
-      &:focus {
-        fill: var(--button-hover-focus);
-      }
-    }
+
     &__contact-mail-link {
       letter-spacing: 0.02em;
       @include font(24px, 500, 28px);
@@ -109,7 +108,8 @@
     height: 16px;
     &-btn {
       padding: 0;
-      padding-right: 8px;
+      width: 40px;
+      height: 40px;
       border: 0;
       background-color: white;
       cursor: pointer;
