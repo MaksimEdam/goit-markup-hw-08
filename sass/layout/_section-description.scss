@@ -17,13 +17,22 @@
   text-transform: uppercase;
 }
 .section-description__title,
-.work__title,
-.team__title,
-.clients__title {
+.team__title {
   @include font();
   color: var(--title-text-color);
   margin-bottom: 10px;
   text-align: center;
+}
+.work__title,
+.clients__title {
+  color: var(--title-text-color);
+  margin-bottom: 30px;
+  padding-top: 60px;
+  text-align: center;
+  font-family: Roboto;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.17;
 }
 .desc,
 .address-list {
@@ -32,15 +41,6 @@
 }
 /* МОБИЛКА */
 @media screen and (max-width: 767px) {
-  .work__title,
-  .clients__title {
-    font-family: Roboto;
-    font-weight: 700;
-    font-size: 28px;
-    line-height: 1.17;
-    margin-bottom: 30px;
-    padding-top: 60px;
-  }
   .work__title_margin {
     padding-top: 60px;
   }
@@ -62,14 +62,6 @@
 /* МОБИЛКА конец*/
 /* ТАБЛЕТ */
 @media screen and (min-width: 768px) {
-  .work__title,
-  .clients__title {
-    font-family: Roboto;
-    font-weight: 700;
-    font-size: 28px;
-    line-height: 1.17;
-    padding-top: 60px;
-  }
   .section-icon {
     display: flex;
     flex-wrap: wrap;
@@ -86,6 +78,9 @@
   }
   .section-icon__link {
     max-width: 354px;
+  }
+  .section-description__title {
+    text-align: left;
   }
   .section-description__list {
     display: flex;
@@ -107,7 +102,6 @@
 }
 @media screen and (min-width: 1200px) {
   .section-icon {
-    flex-wrap: wrap;
     justify-content: space-between;
     padding-top: 94px;
     margin-bottom: 30px;

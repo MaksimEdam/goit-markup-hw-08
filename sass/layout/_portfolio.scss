@@ -77,7 +77,7 @@
   padding-bottom: 20px;
 }
 .our-works__container {
-  padding-bottom: 94px;
+  padding-bottom: 60px;
 }
 @media screen and (max-width: 767px) {
   .filter__list {
@@ -127,6 +127,9 @@
   }
 }
 @media screen and (min-width: 1200px) {
+  .our-works__container {
+    padding-bottom: 94px;
+  }
   .filter__list {
     margin-bottom: 50px;
     margin-top: 94px;
