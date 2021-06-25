@@ -140,19 +140,29 @@ body {
   .mobail-menu__link:hover, .mobail-menu__link:focus, .mobail-menu__link.current {
     color: var(--accent-color);
   }
+  .mobail-menu__close {
+    width: 19px;
+    height: 19px;
+  }
   .mobail-menu__close-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     transition: fill var(--transition-start-time) var(--cubic-bezier);
   }
   .mobail-menu__close-btn:hover, .mobail-menu__close-btn:focus {
     fill: var(--button-hover-focus);
+    width: 40px;
+    height: 40px;
   }
   .header__mobail-menu {
     width: 24px;
     height: 16px;
   }
   .header__mobail-menu-btn {
+    width: 40px;
+    height: 40px;
     padding: 0;
-    padding-right: 8px;
     border: 0;
     background-color: white;
     cursor: pointer;
