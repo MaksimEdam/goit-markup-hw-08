@@ -111,13 +111,15 @@ body {
     padding-left: 25px;
   }
   .mobail-menu__close {
-    width: 40px;
-    height: 40px;
+    width: 19px;
+    height: 19px;
   }
   .mobail-menu__close-btn {
+    width: 40px;
+    height: 40px;
     position: absolute;
-    top: 21px;
-    right: 25px;
+    top: 10px;
+    right: 15px;
     border: none;
     background-color: transparent;
     padding: 0;
@@ -195,11 +197,14 @@ body {
     height: 16px;
   }
   .header__mobail-menu-btn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
     padding: 0;
     width: 40px;
     height: 40px;
     border: 0;
-    background-color: white;
+    background-color: transparent;
     cursor: pointer;
     transition: fill var(--transition-start-time) var(--cubic-bezier);
   }
