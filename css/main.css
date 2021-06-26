@@ -121,6 +121,10 @@ body {
     border: none;
     background-color: transparent;
     padding: 0;
+    transition: fill var(--transition-start-time) var(--cubic-bezier);
+  }
+  .mobail-menu__close-btn:hover, .mobail-menu__close-btn:focus {
+    fill: var(--button-hover-focus);
   }
   .mobail-menu.is-open {
     opacity: 1;
@@ -139,12 +143,6 @@ body {
   }
   .mobail-menu__link:hover, .mobail-menu__link:focus, .mobail-menu__link.current {
     color: var(--accent-color);
-  }
-  .mobail-menu__close-btn {
-    transition: fill var(--transition-start-time) var(--cubic-bezier);
-  }
-  .mobail-menu__close-btn:hover, .mobail-menu__close-btn:focus {
-    fill: var(--button-hover-focus);
   }
   .mobail-menu__contact-mail-link {
     letter-spacing: 0.02em;
@@ -198,7 +196,8 @@ body {
   }
   .header__mobail-menu-btn {
     padding: 0;
-    padding-right: 8px;
+    width: 40px;
+    height: 40px;
     border: 0;
     background-color: white;
     cursor: pointer;
